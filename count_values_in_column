@@ -1,0 +1,7 @@
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\mmur0013\Downloads\230710 MySydney Program Data Extract.csv') 
+
+count1 = df['Gender'].count()
+
+print(count1)
