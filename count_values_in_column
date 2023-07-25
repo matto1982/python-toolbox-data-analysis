@@ -5,3 +5,15 @@ df = pd.read_csv(r'C:\Users\mmur0013\Downloads\230710 MySydney Program Data Extr
 count1 = df['Gender'].count()
 
 print(count1)
+
+#OR for two columns etc:
+
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\mmur0013\Downloads\230710 MySydney Program Data Extract.csv') 
+
+count1 = df['Gender'].count()
+count2 = df['Language spoken at home'].count()
+
+print(count1)
+print(count2)
