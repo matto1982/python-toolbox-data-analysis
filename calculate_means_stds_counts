@@ -1,0 +1,31 @@
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\Ron\Desktop\stats.csv') 
+
+# block 1 - simple stats
+mean1 = df['salary'].mean()
+sum1 = df['salary'].sum()
+max1 = df['salary'].max()
+min1 = df['salary'].min()
+count1 = df['salary'].count()
+median1 = df['salary'].median() 
+std1 = df['salary'].std() 
+var1 = df['salary'].var()  
+
+# block 2 - group by
+groupby_sum1 = df.groupby(['country']).sum() 
+groupby_count1 = df.groupby(['country']).count()
+
+# print block 1
+print('mean salary: ' + str(mean1))
+print('sum of salaries: ' + str(sum1))
+print('max salary: ' + str(max1))
+print('min salary: ' + str(min1))
+print('count of salaries: ' + str(count1))
+print('median salary: ' + str(median1))
+print('std of salaries: ' + str(std1))
+print('var of salaries: ' + str(var1))
+
+# print block 2
+print('sum of values, grouped by the country: ' + str(groupby_sum1))
+print('count of values, grouped by the country: ' + str(groupby_count1))
