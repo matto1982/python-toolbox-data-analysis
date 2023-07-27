@@ -1,5 +1,12 @@
 import pandas as pd
 
+df = pd.read_csv(r'C:\Users\mmur0013\Downloads\2023 July 26 - Cirriculum team Qs\Students and Courses (EDW).csv')
+df.describe()
+
+#OR
+
+import pandas as pd
+
 df = pd.read_csv(r'C:\Users\Ron\Desktop\stats.csv') 
 
 # block 1 - simple stats
