@@ -1,0 +1,10 @@
+import pandas as pd
+
+
+
+# Read the CSV file
+df = pd.read_csv(r"C:\Users\mattm\Downloads\TDA_EDW Pathways (5 years).csv")
+
+
+
+df.tail()
