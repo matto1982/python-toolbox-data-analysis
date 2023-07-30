@@ -1,0 +1,4 @@
+name = "freeCodeCamp"
+print(len(name))
+
+# Output: 12
